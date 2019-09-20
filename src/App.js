@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import './App.css';
 
 
@@ -12,7 +13,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      list: ["frog", "dog", "cat", "monkey"]
+      animalList: ["frog", "dog", "cat", "monkey"]
     }
   }
 
@@ -25,6 +26,7 @@ class App extends Component {
         <Link className="link" to="/about/">About</Link>
         <Link className="link" to="/list/">List</Link>
       </div>
+
 
     );
   }

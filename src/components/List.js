@@ -11,12 +11,12 @@ class List extends Component {
 
     render() {
 
-        const animalList = this.props.animals.map((animal, idx) => {
-            return <h1 key={ idx }>{ animal }</h1>
+        const animalList = this.props.animalList.map((animal, idx) => {
+            return <h1 key={idx}>{animal}</h1>
         })
         return (
             <div className="list">
-                { animalList }
+                {animalList}
 
                 <button >Redirect Component Button</button>
 
